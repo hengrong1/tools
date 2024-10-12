@@ -1,6 +1,19 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
 html {
     font-size: 14px;
 }
 body {
     margin: 0;
+}
+svg.iconify {
+    font-size: 20px;
 }

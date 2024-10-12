@@ -1,11 +1,21 @@
-<script setup>
-
-</script>
-
 <template>
-  home
+  <Calendar />
+  <DatePicker v-model="date"/>
 </template>
 
-<style scoped>
+<script>
+import { Calendar, DatePicker } from 'v-calendar';
+import 'v-calendar/style.css';
 
-</style>
+export default {
+  components: {
+    Calendar,
+    DatePicker,
+  },
+  data() {
+    return {
+      date: new Date(),
+    };
+  },
+}
+</script>

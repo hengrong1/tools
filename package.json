@@ -11,21 +11,24 @@
     "tauri:build": "tauri build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "@primevue/themes": "^4.0.7",
-    "@tauri-apps/api": ">=2.0.0-rc.0",
-    "@tauri-apps/plugin-shell": ">=2.0.0-rc.0",
+    "@tauri-apps/api": "2.0.0-rc.6",
+    "@tauri-apps/plugin-shell": "2.0.0-rc.1",
     "pinia": "^2.2.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.7",
-    "vue": "^3.3.4",
+    "tailwindcss-primeui": "^0.3.4",
+    "v-calendar": "^3.1.2",
+    "vue": "^3.5.10",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.2",
     "@primevue/auto-import-resolver": "^4.0.7",
-    "@tauri-apps/cli": ">=2.0.0-rc.0",
-    "@vitejs/plugin-vue": "^5.0.5",
+    "@tauri-apps/cli": "2.0.0-rc.17",
+    "@vitejs/plugin-vue": "^5.1.4",
     "unplugin-vue-components": "^0.27.4",
-    "vite": "^5.3.1"
+    "vite": "^5.4.8"
   }
 }

@@ -50,7 +50,7 @@ console.log(items.value);
       <template #item="{ item, props, hasSubmenu }">
         <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
           <a v-ripple :href="href" v-bind="props.action" @click="navigate">
-            <Icon :icon="item.icon"/>
+            <Icon :icon="item.icon" class="text-primary-contrast"/>
             <span class="ml-2">{{ item.label }}</span>
           </a>
         </router-link>
