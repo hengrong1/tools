@@ -1,21 +1,22 @@
 <template>
-  <Calendar />
-  <DatePicker v-model="date"/>
+  <Card>
+    <template #title>Simple Card</template>
+    <template #content>
+      <VCalendar is-dark="system" show-weeknumbers :attributes='attrs' />
+    </template>
+  </Card>
 </template>
 
-<script>
-import { Calendar, DatePicker } from 'v-calendar';
+<script setup>
+import { Calendar as VCalendar } from 'v-calendar';
 import 'v-calendar/style.css';
+import { ref } from 'vue';
 
-export default {
-  components: {
-    Calendar,
-    DatePicker,
+const attrs = ref([
+  {
+    key: 'today',
+    highlight: true,
+    dates: new Date(),
   },
-  data() {
-    return {
-      date: new Date(),
-    };
-  },
-}
+]);
 </script>

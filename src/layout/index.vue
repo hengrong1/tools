@@ -7,7 +7,11 @@ import Header from './Header/index.vue'
     <Header/>
   </header>
   <main>
-    <router-view/>
+    <router-view v-slot="{ Component }">
+      <transition mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 
